@@ -1,7 +1,7 @@
 # BİL 304 - İşletim Sistemleri Dönem Projesi
 ## OTA (Over-The-Air) Firmware Güncellemesi - Geliştirme İş Parçacığı
 
-**Öğrenci:** [Öğrenci Numaran] - [Adın Soyadın]
+**Öğrenci:** 22060338 - Şule Şahan
 
 ### 🎥 Proje Sunum Videosu (YouTube)
 Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açıklayan yüksek çözünürlüklü sunum videoma aşağıdaki bağlantıdan ulaşabilirsiniz:
