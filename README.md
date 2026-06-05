@@ -4,7 +4,7 @@
 **Öğrenci:** 22060338 - Şule Şahan
 
 ### 🎥 Proje Sunum Videosu (YouTube)
-Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açıklayan yüksek çözünürlüklü sunum videoma aşağıdaki bağlantıdan ulaşabilirsiniz:
+Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açıklayan sunum videoma aşağıdaki bağlantıdan ulaşabilirsiniz:
 👉 https://youtu.be/GHRJNH-PQ6Y
 
 ---
