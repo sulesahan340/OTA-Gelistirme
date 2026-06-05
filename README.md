@@ -5,7 +5,7 @@
 
 ### 🎥 Proje Sunum Videosu (YouTube)
 Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açıklayan yüksek çözünürlüklü sunum videoma aşağıdaki bağlantıdan ulaşabilirsiniz:
-👉 **[YOUTUBE_LINKI_BURAYA_GELECEK]**
+👉 https://youtu.be/GHRJNH-PQ6Y
 
 ---
 
