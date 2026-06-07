@@ -2,18 +2,10 @@
 ## OTA (Over-The-Air) Firmware Güncellemesi — Geliştirme İş Parçacığı
 
 **Öğrenci:** 22060338 — Şule Şahan  
-**Üniversite:** Ondokuz Mayıs Üniversitesi — Bilgisayar Mühendisliği  
-**Dönem:** 2025/2026 Bahar  
-**Platform:** Contiki-NG + Cooja Simülatörü — Zolertia Z1 (MSP430)
-
----
-
 ### 🎥 Proje Sunum Videosu (YouTube)
 
 Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açıklayan sunum videoma aşağıdaki bağlantıdan ulaşabilirsiniz:  
 👉 **[YouTube — OTA Firmware Güncellemesi Sunum Videosu](https://youtu.be/GHRJNH-PQ6Y)**
-
----
 
 ## İçindekiler
 
@@ -27,8 +19,6 @@ Projenin Cooja ortamında çalıştırılmasını ve teorik altyapısını açı
 8. [Test Sonuçları](#8-test-sonuçları)
 9. [Simülasyonun Çalıştırılması](#9-simülasyonun-çalıştırılması)
 
----
-
 ## 1. Projenin Amacı
 
 Bu proje, Contiki-NG işletim sistemi çalıştıran iki IoT düğümü arasında **güvenilir bir OTA (Over-The-Air) firmware güncelleme sistemi** geliştirmeyi amaçlamaktadır.
@@ -39,8 +29,6 @@ Temel hedefler:
 - 🔄 Kayıp/bozuk paketlerin tespit edilip yeniden gönderilmesi (ARQ)
 - 💾 Alıcı düğümde firmware'in kalıcı depolama alanına kaydedilmesi
 - ✅ Aktarım sonunda başarı doğrulamasının yapılması
-
----
 
 ## 2. Sistem Mimarisi
 
