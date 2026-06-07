@@ -307,7 +307,7 @@ Kodumuzda hedef IP adresini tutan `uip_ipaddr_t dest_ipaddr` değişkeni normal 
 IP adresi sorunu çözüldükten sonra aktarım 61. bloğa kadar sorunsuz ilerledi. Ancak 62. blokta Server sürekli `Write Error Block 62` hata mesajı basıyordu.
 
 **Kök Neden Analizi:**  
-İlk tasarımda alınan firmware bloklarını Contiki-NG'nin CFS (Coffee File System) dosya sistemi üzerine yazıyorduk. Cooja simülatörünün kaynak kodlarını (`cfs-cooja.c`) incelediğimizde, varsayılan sanal disk boyutunun **4000 Bayt** ile sınırlandırıldığını fark ettik.
+İlk tasarımda alınan firmware blokları Contiki-NG'nin CFS (Coffee File System) dosya sistemi üzerine yazılıyordu. Cooja simülatörünün kaynak kodları (`cfs-cooja.c`) incelendiğinde, varsayılan sanal disk boyutunun **4000 Bayt** ile sınırlandırıldığı fark edildi.
 
 ```
 Blok 61: offset = 61 × 64 = 3904 → 3904 + 64 = 3968 bayt ✓ (Disk yeterli)
@@ -326,9 +326,9 @@ static uint8_t sim_flash[SIM_FLASH_SIZE];
 ```
 
 Bu çözüm, gerçek gömülü sistemlerde sıkça kullanılan **harici SPI Flash** (örn: Winbond W25Q128) benzetimini simüle etmektedir. Böylece:
-- ✅ Disk boyutu kısıtlamasından kurtulduk
-- ✅ 129 KB'lık büyük firmware dosyalarını bile saklayabilir hale geldik
-- ✅ Gerçek dünya donanım tasarımına uygun bir yaklaşım izledik
+- ✅ Disk boyutu kısıtlamasından kurtulundu
+- ✅ 129 KB'lık büyük firmware dosyalarını bile saklayabilir hale gelindi
+- ✅ Gerçek dünya donanım tasarımına uygun bir yaklaşım izlenildi
 
 ---
 
