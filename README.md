@@ -118,7 +118,6 @@ sequenceDiagram
     Note over S: Flash CRC32 hesapla<br/>Karşılaştır ✓✓✓
     Note over S: "Yüklenmeye hazır yeni<br/>firmware alımı tamamlandı."
 ```
-
 ---
 
 ## 4. Dosya Yapısı ve Kod Açıklamaları
@@ -202,7 +201,6 @@ flowchart TD
     M -->|Evet| N["✅ Firmware alımı tamamlandı!"]
     M -->|Hayır| O["❌ CRC32 uyuşmazlığı!"]
 ```
-
 ---
 
 ## 5. Güvenilir Aktarım Stratejisi
@@ -319,10 +317,7 @@ Blok 62: offset = 62 × 64 = 3968 → 3968 + 64 = 4032 bayt ✗ (4000 bayt limit
 Firmware dosyamız **4096 Bayt** olduğu için son ~96 baytlık kısım diske sığmıyordu.
 
 **Çözüm:**  
-Ödev dokümanında hocanın açıkça verdiği izin:
-> *"İsteyenler harici flash benzetimi veya uygun gördükleri başka bir kalıcı saklama yaklaşımını kullanabilirler."*
-
-Bu izne dayanarak CFS fonksiyonlarını tamamen kaldırıp, Server'ın RAM'inde **150 KB boyutunda statik bir byte dizisi** oluşturarak **Harici Flash Simülasyonu** geliştirdik:
+Ödev dökümanında verilen izine dayanarak CFS fonksiyonlarını tamamen kaldırıp, Server'ın RAM'inde **150 KB boyutunda statik bir byte dizisi** oluşturarak **Harici Flash Simülasyonu** geliştirildi:
 
 ```c
 /* Harici Flash Benzetimi (Simulated External Flash) */
