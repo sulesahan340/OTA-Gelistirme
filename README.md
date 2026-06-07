@@ -303,10 +303,6 @@ Kodumuzda hedef IP adresini tutan `uip_ipaddr_t dest_ipaddr` değişkeni normal 
 
 `static` anahtar kelimesi değişkenin Stack yerine BSS/Data segmentinde saklanmasını sağlar. Böylece Protothread duraklatma/devam döngüsünden etkilenmez ve IP adresi kalıcı olarak bellekte tutulur.
 
-> ⚠️ **Bu, Contiki-NG geliştirme topluluğunda sıkça karşılaşılan ve sinsi bir hatadır. Protothreads'in dahili çalışma mantığını bilmeden teşhis edilmesi oldukça güçtür.**
-
----
-
 ### 🔴 Problem 2: CFS Dosya Sistemi Boyut Limiti (4000 Bayt)
 
 **Sorun:**  
@@ -365,11 +361,6 @@ stateDiagram-v2
     SlotB_Staged --> SlotB_Active: Reboot sonrası
     SlotB_Active --> SlotA_Rollback: Hata durumunda geri dönüş
 ```
-
-> **Not:** Cooja simülatöründe gerçek reboot yapılamadığından, metadata yönetimi yalnızca veri yapısı ve durum geçişleri seviyesinde uygulanmıştır. Gerçek donanımda (CC1352R Launchpad gibi) bu yapı bootloader ile entegre edilebilir.
-
----
-
 ## 8. Test Sonuçları
 
 ### 8.1. Başarılı Aktarım Senaryosu
